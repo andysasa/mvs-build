@@ -20,9 +20,9 @@ module.exports = {
       },
       fontFamily: {
         'maven-pro': ['"Maven Pro"', 'sans-serif'],
+        'Freehand': ['"Freehand"', 'cursive']
       },
     },
-    
   },
   variants: {
   extend: {},
