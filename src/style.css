@@ -58,4 +58,12 @@
         }
     }
 
+    .vert-service-item {
+        @apply w-1/4 bg-white drop-shadow-lg rounded-lg h-1/2;
+    }
+
+    .horizontal-service-item {
+        @apply rounded-lg bg-white drop-shadow-lg w-full h-1/4;
+    }
+
 }
