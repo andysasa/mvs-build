@@ -59,11 +59,37 @@
     }
 
     .vert-service-item {
-        @apply w-1/4 bg-white drop-shadow-lg rounded-lg h-1/2;
+        @apply w-1/3 bg-white drop-shadow-md rounded-lg h-2/3;
     }
 
     .horizontal-service-item {
-        @apply rounded-lg bg-white drop-shadow-lg w-full h-1/4;
+        @apply rounded-lg bg-white drop-shadow-md w-full h-1/4;
     }
 
+    .services-title {
+        grid-area: title;
+    }
+
+    .services-icon {
+        grid-area: icon;
+    }
+
+    .services-desc {
+        grid-area: desc;
+    }
+
+    .services-button {
+        grid-area: button;
+    }
+
+    .services-item {
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr 10fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "icon title title"
+        "desc desc desc"
+        "none none button"
+    }
 }
