@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    * {
+        @apply m-0 p-0 box-border;
+    }
+
+
+}
+
+@layer components {
+    .btn-indigo {
+        @apply py-2 px-4 text-coral bg-indigo drop-shadow focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-coral rounded-full font-semibold;
+    }
+
+    .btn-white {
+        @apply py-2 px-4 text-indigo bg-white drop-shadow focus:outline-none focus:ring-2 focus:ring-indigo  rounded-full  font-semibold;
+    }
+
+    .burger-transition {
+        span {
+            &:nth-child(1) {
+                transition: top 0.3s cubic-bezier(0.21, 0.83, 0.26, 0.87) 0.3s,
+                    transform 0.3s cubic-bezier(0.21, 0.83, 0.26, 0.87);
+            }
+            &:last-child {
+                transition: top 0.3s cubic-bezier(0.21, 0.83, 0.26, 0.87) 0.3s,
+                    transform 0.3s cubic-bezier(0.21, 0.83, 0.26, 0.87);
+            }
+        }
+    }
+
+    .open {
+        @apply bg-lavender rounded-full hover:bg-haze;
+        span {
+            &:nth-child(1) {
+                @apply top-5;
+                transform: translateX(-50%) translateY(0) rotate(45deg);
+                transition: top 0.3s cubic-bezier(0.21, 0.83, 0.26, 0.87),
+                    transform 0.3s cubic-bezier(0.21, 0.83, 0.26, 0.87) 0.3s;
+            }
+            &:nth-child(2) {
+                opacity: 0;
+            }
+            &:last-child {
+                @apply top-5;
+                transform: translateX(-50%) translateY(0) rotate(-45deg);
+                transition: bottom 0.3s cubic-bezier(0.21, 0.83, 0.26, 0.87),
+                    transform 0.3s cubic-bezier(0.21, 0.83, 0.26, 0.87) 0.3s;
+            }
+        }
+    }
+
+}
