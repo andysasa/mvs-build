@@ -17,6 +17,7 @@
     <title>Document</title>
 </head>
 <body class="font-maven-pro bg-offwhite overflow-x-hidden">
+    <!-- Nav -->
     <header class="pt-6">
         <div class="container flex mx-auto w-full justify-between px-8 md:px-14 lg:px-24">
             <nav class="slide-nav fixed top-0 right-0 translate-x-full ease-out duration-300 md:hidden z-20 w-full">
@@ -49,7 +50,7 @@
         </div>
         
     </header>
-    
+    <!-- Hero -->
     <section class="hero container flex mt-16 mx-auto w-full justify-between px-8 md:px-14 lg:px-24 items-center">
         <div class="flex flex-wrap-reverse md:flex-nowrap">
             <nav class="circle-nav fixed hidden lg:block left-12 mt-24">
@@ -61,7 +62,7 @@
                 </div>
             </nav>
             <div class="lg:ml-18 flex-col mt-10 md:flex justify-center md:justify-start max-w-xl mx-auto md:my-20 text-center md:text-left lg:ml-6 xl:ml-16">
-                <h1 class="text-2xl md:text-2xl lg:text-3xl xl:text-5xl">Hello, My name Andy and I am a ...
+                <h1 class="text-2xl lg:text-3xl xl:text-5xl">Hello, My name Andy and I am a ...
                     <span class="txt-type block my-12 font-extrabold" data-wait="3000" data-words='["relief veterinarian", "web developer", "entrepreneur", "problem solver"]'>RELIEF VETERINARIAN</span>
                 </h1>
                 <div>
@@ -73,7 +74,7 @@
             <img src="./assets/images/profile-photo.webp" class="w-60 h-60 md:w-72 md:h-72 rounded-full bg-offwhite mx-auto md:ml-16 md:mt-14 lg:w-96 lg:h-96 lg:ml-20  2xl:ml-32" alt="Dr. Andy Chiang with a corgi" srcset="">
         </div>
     </section>
-    <section class="quote container mt-24 items-center">
+    <section class="quote container mt-24">
         <div class="w-screen bg-lavender px-8 py-10 md:px-12 lg:h-80 lg:px-24 lg:py-16 2xl:px-36">
            <h2 class="text-haze font-Freehand text-4xl lg:text-5xl relative -left-4 top-1">Tech-forward solutions</h2>
            <p class="px-2 text-indigo border-l-2 border-coral md:text-xl leading-7">Technology has altered business standards across industries, including the veterinary profession. The pace of adaptation will only accelerate in the coming decade. Who better to help you navigtate through this rapidly changing environment than a veterinarian who understands the computer language?</p>
@@ -87,55 +88,117 @@
            </div>
         </div>
     </section>
-    <section id="services" class="services container mt-24 mx-auto  px-8 py-6 md:px-12 lg:px-24 lg:py-16 2xl:px-36">
+    <!-- Services -->
+    <section id="services" class="services container mt-24 lg:mt-32 mx-auto  px-8 md:px-12 lg:px-24 2xl:px-36">
         <div class="h-1 w-14 bg-indigo rounded-full"></div>
-        <h2 class="text-xl font-bold lg:text-3xl">Services</h2>
-        <div class="services-items flex flex-wrap lg:flex-nowrap w-full items-center justify-between h-screen">
-            <div class="services-item lg:flex lg:flex-col horizontal-service-item lg:vert-service-item lg:py-8 px-4">
-                <h3 class="services-titlg:text-center font-bold text-lg">Relief</h3>
+        <h2 class="text-2xl font-bold lg:text-3xl">Services</h2>
+        <div class="services-items flex flex-wrap lg:flex-nowrap w-full gap-4 justify-between h-screen my-10 lg:my-0 lg:items-center">
+            <div class="services-item lg:flex lg:flex-col horizontal-service-item lg:vert-service-item lg:py-8 lg:hover:scale-105 lg:ease-in-out duration-100 px-4 lg:h-2/3">
+                <h3 class="services-titlg:text-center font-bold text-lg lg:text-xl">Relief</h3>
                 <div class="services-icon">
                     <svg class="w-12 h-12 lg:w-20 lg:h-20"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37.5 37.5" version="1.0"><defs><clipPath id="a"><path d="M 11.25 11.335938 L 26.25 11.335938 L 26.25 26.335938 L 11.25 26.335938 Z M 11.25 11.335938"/></clipPath></defs><g clip-path="url(#a)"><path d="M 26.242188 18.835938 C 26.242188 14.691406 22.886719 11.335938 18.75 11.335938 C 14.613281 11.335938 11.257812 14.691406 11.257812 18.835938 C 11.257812 22.976562 14.613281 26.335938 18.75 26.335938 C 22.886719 26.335938 26.242188 22.976562 26.242188 18.835938 Z M 17.335938 13.882812 L 20.164062 13.882812 L 20.164062 17.417969 L 23.699219 17.417969 L 23.699219 20.25 L 20.164062 20.25 L 20.164062 23.789062 L 17.335938 23.789062 L 17.335938 20.25 L 13.800781 20.25 L 13.800781 17.417969 L 17.335938 17.417969 L 17.335938 13.882812" fill-rule="evenodd"/></g></svg>
                 </div>
-                <p class="services-desc px-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dolores soluta atque doloribus dolor ab.</p>
+                <p class="services-desc px-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa vero animi, consequatur doloribus reprehenderit error nam quidem! Odio, natus neque!</p>
+                <br>
+                <p class="services-desc px-4 hidden lg:block">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam ipsam quaerat exercitationem ratione at earum molestiae incidunt repudiandae quod assumenda!</p>
+                <br>
+                
                 <button class="services-button lg:hidden">
                     <svg xmlns="http://www.w3.org/2000/svg" width="37.5" viewBox="0 0 37.5 37.5" height="37.5" version="1.0"><defs><clipPath id="a"><path d="M 14.296875 11.25 L 23.296875 11.25 L 23.296875 26.25 L 14.296875 26.25 Z M 14.296875 11.25"/></clipPath></defs><g clip-path="url(#a)"><path fill="#1B047C" d="M 14.382812 24.9375 C 14.382812 25.160156 14.464844 25.359375 14.621094 25.523438 L 15.117188 26.015625 C 15.269531 26.167969 15.484375 26.25 15.710938 26.25 C 15.933594 26.25 16.136719 26.167969 16.289062 26.015625 L 23.046875 19.332031 C 23.199219 19.179688 23.28125 18.96875 23.28125 18.742188 C 23.28125 18.519531 23.199219 18.320312 23.046875 18.15625 L 16.300781 11.484375 C 16.148438 11.332031 15.933594 11.25 15.722656 11.25 C 15.496094 11.25 15.292969 11.332031 15.128906 11.484375 L 14.632812 11.976562 C 14.3125 12.292969 14.3125 12.820312 14.632812 13.136719 L 20.296875 18.742188 L 14.621094 24.363281 C 14.464844 24.515625 14.382812 24.714844 14.382812 24.9375 Z M 14.382812 24.9375"/></g></svg>
                 </button>
             </div>
-            <div class="services-item lg:flex lg:flex-col horizontal-service-item lg:vert-service-item lg:h-4/5 lg:mx-10 lg:py-8 px-4">
-                <h3 class="services-titlg:text-center font-bold text-lg">Relief</h3>
+            <div class="services-item lg:flex lg:flex-col horizontal-service-item lg:vert-service-item lg:py-8 lg:hover:scale-105 lg:ease-in-out duration-100 px-4 lg:h-5/6">
+                <h3 class="services-tite lg:text-center font-bold text-lg lg:text-xl">Web Development</h3>
                 <div class="services-icon">
                     <svg class="w-12 h-12 lg:w-20 lg:h-20"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37.5 37.5" version="1.0"><defs><clipPath id="a"><path d="M 11.25 11.335938 L 26.25 11.335938 L 26.25 26.335938 L 11.25 26.335938 Z M 11.25 11.335938"/></clipPath></defs><g clip-path="url(#a)"><path d="M 26.242188 18.835938 C 26.242188 14.691406 22.886719 11.335938 18.75 11.335938 C 14.613281 11.335938 11.257812 14.691406 11.257812 18.835938 C 11.257812 22.976562 14.613281 26.335938 18.75 26.335938 C 22.886719 26.335938 26.242188 22.976562 26.242188 18.835938 Z M 17.335938 13.882812 L 20.164062 13.882812 L 20.164062 17.417969 L 23.699219 17.417969 L 23.699219 20.25 L 20.164062 20.25 L 20.164062 23.789062 L 17.335938 23.789062 L 17.335938 20.25 L 13.800781 20.25 L 13.800781 17.417969 L 17.335938 17.417969 L 17.335938 13.882812" fill-rule="evenodd"/></g></svg>
                 </div>
                 <p class="services-desc px-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dolores soluta atque doloribus dolor ab.</p>
+                <br>
+                <p class="services-desc px-4 hidden lg:block">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam ipsam quaerat exercitationem ratione at earum molestiae incidunt repudiandae quod assumenda!</p>
+                <br>
+                <p class="services-desc px-4 hidden lg:block">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, beatae repellendus molestias obcaecati laboriosam quaerat magnam, vero sint enim quidem labore! Tenetur dignissimos officiis iusto asperiores esse atque corrupti quis.</p>
+                <br>
+
                 <button class="services-button lg:hidden">
                     <svg xmlns="http://www.w3.org/2000/svg" width="37.5" viewBox="0 0 37.5 37.5" height="37.5" version="1.0"><defs><clipPath id="a"><path d="M 14.296875 11.25 L 23.296875 11.25 L 23.296875 26.25 L 14.296875 26.25 Z M 14.296875 11.25"/></clipPath></defs><g clip-path="url(#a)"><path fill="#1B047C" d="M 14.382812 24.9375 C 14.382812 25.160156 14.464844 25.359375 14.621094 25.523438 L 15.117188 26.015625 C 15.269531 26.167969 15.484375 26.25 15.710938 26.25 C 15.933594 26.25 16.136719 26.167969 16.289062 26.015625 L 23.046875 19.332031 C 23.199219 19.179688 23.28125 18.96875 23.28125 18.742188 C 23.28125 18.519531 23.199219 18.320312 23.046875 18.15625 L 16.300781 11.484375 C 16.148438 11.332031 15.933594 11.25 15.722656 11.25 C 15.496094 11.25 15.292969 11.332031 15.128906 11.484375 L 14.632812 11.976562 C 14.3125 12.292969 14.3125 12.820312 14.632812 13.136719 L 20.296875 18.742188 L 14.621094 24.363281 C 14.464844 24.515625 14.382812 24.714844 14.382812 24.9375 Z M 14.382812 24.9375"/></g></svg>
                 </button>
             </div>
-            <div class="services-item lg:flex lg:flex-col horizontal-service-item lg:vert-service-item lg:py-8 px-4">
-                <h3 class="services-titlg:text-center font-bold text-lg">Relief</h3>
+            <div class="services-item lg:flex lg:flex-col horizontal-service-item lg:vert-service-item lg:py-8 lg:hover:scale-105 lg:ease-in-out duration-100 px-4 lg:h-2/3">
+                <h3 class="services-titlg:text-center font-bold text-lg lg:text-xl">Business Consultation</h3>
                 <div class="services-icon">
                     <svg class="w-12 h-12 lg:w-20 lg:h-20"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37.5 37.5" version="1.0"><defs><clipPath id="a"><path d="M 11.25 11.335938 L 26.25 11.335938 L 26.25 26.335938 L 11.25 26.335938 Z M 11.25 11.335938"/></clipPath></defs><g clip-path="url(#a)"><path d="M 26.242188 18.835938 C 26.242188 14.691406 22.886719 11.335938 18.75 11.335938 C 14.613281 11.335938 11.257812 14.691406 11.257812 18.835938 C 11.257812 22.976562 14.613281 26.335938 18.75 26.335938 C 22.886719 26.335938 26.242188 22.976562 26.242188 18.835938 Z M 17.335938 13.882812 L 20.164062 13.882812 L 20.164062 17.417969 L 23.699219 17.417969 L 23.699219 20.25 L 20.164062 20.25 L 20.164062 23.789062 L 17.335938 23.789062 L 17.335938 20.25 L 13.800781 20.25 L 13.800781 17.417969 L 17.335938 17.417969 L 17.335938 13.882812" fill-rule="evenodd"/></g></svg>
                 </div>
                 <p class="services-desc px-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dolores soluta atque doloribus dolor ab.</p>
+                <br>
+                <p class="services-desc px-4 hidden lg:block">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam ipsam quaerat exercitationem ratione at earum molestiae incidunt repudiandae quod assumenda!</p>
+                <br>
+   
                 <button class="services-button lg:hidden">
                     <svg xmlns="http://www.w3.org/2000/svg" width="37.5" viewBox="0 0 37.5 37.5" height="37.5" version="1.0"><defs><clipPath id="a"><path d="M 14.296875 11.25 L 23.296875 11.25 L 23.296875 26.25 L 14.296875 26.25 Z M 14.296875 11.25"/></clipPath></defs><g clip-path="url(#a)"><path fill="#1B047C" d="M 14.382812 24.9375 C 14.382812 25.160156 14.464844 25.359375 14.621094 25.523438 L 15.117188 26.015625 C 15.269531 26.167969 15.484375 26.25 15.710938 26.25 C 15.933594 26.25 16.136719 26.167969 16.289062 26.015625 L 23.046875 19.332031 C 23.199219 19.179688 23.28125 18.96875 23.28125 18.742188 C 23.28125 18.519531 23.199219 18.320312 23.046875 18.15625 L 16.300781 11.484375 C 16.148438 11.332031 15.933594 11.25 15.722656 11.25 C 15.496094 11.25 15.292969 11.332031 15.128906 11.484375 L 14.632812 11.976562 C 14.3125 12.292969 14.3125 12.820312 14.632812 13.136719 L 20.296875 18.742188 L 14.621094 24.363281 C 14.464844 24.515625 14.382812 24.714844 14.382812 24.9375 Z M 14.382812 24.9375"/></g></svg>
                 </button>
             </div>
         </div>
         <div class="w-full flex justify-center">
-            <button class="invisible lg:visible btn-indigo text-white px-8 py-4 hover:text-coral">Learn more</button>
+            <button class="invisible lg:visible btn-indigo text-white px-6 py-3 hover:text-coral">Learn more</button>
         </div>
     </section>
-    <section class="work container">
+    <!-- Work -->
+    <section id="work" class="work container mt-8 lg:mt-32 mx-auto  px-8 md:px-12 lg:px-24 2xl:px-36">
+        <div class="h-1 w-14 bg-indigo rounded-full"></div>
+        <h2 class="text-2xl font-bold lg:text-3xl">My Work</h2>
         <div class="work-items">
-            <div class="work-item"></div>
-            <div class="work-item"></div>
-            <div class="work-item"></div>
+            <div class="work-item work-item-1 my-10 lg:my-12 flex flex-col lg:flex-row-reverse">
+                <img class="lg:w-1/2" src="./assets/images/corgi.webp" alt="" srcset="">
+                <div class="work-detail flex flex-wrap lg:flex-col justify-between items-center lg:items-start lg:mr-20 py-4">
+                    <h3 class="work-title font-bold lg:text-xl">KovitaPets<span class="work-role text-xs ml-1 text-gray-500">Co-founder</span></h3>
+                    <button class="btn-hollow lg:order-last md:px-6 lg:text-lg lg:mt-4">Visit</button>
+                    <p class="work-desc mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla commodi labore Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam, placeat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic libero eius corrupti commodi iusto minima illo quae esse voluptatem ut? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque doloribus exercitationem, quaerat nostrum illum id?</p>
+                </div>
+            </div>
+            <!-- even item reverse layout -->
+            <div class="work-item work-item-2 my-10 lg:my-12 flex flex-col lg:flex-row">
+                <img class="lg:w-1/2" src="./assets/images/corgi.webp" alt="" srcset="">
+                <div class="work-detail flex flex-wrap lg:flex-col justify-between items-center lg:items-start lg:ml-20 py-4">
+                    <h3 class="work-title font-bold lg:text-xl">What is Andy Doing NOW?!<span class="work-role text-xs ml-1 text-gray-500">Founder</span></h3>
+                    <button class="btn-hollow lg:order-last md:px-6 lg:text-lg lg:mt-4">Visit</button>
+                    <p class="work-desc mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla commodi labore Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam, placeat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic libero eius corrupti commodi iusto minima illo quae esse voluptatem ut? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque doloribus exercitationem, quaerat nostrum illum id?</p>
+                </div>
+            </div>
+            <div class="work-item work-item-3 my-10 lg:my-12 flex flex-col lg:flex-row-reverse">
+                <img class="lg:w-1/2" src="./assets/images/corgi.webp" alt="" srcset="">
+                <div class="work-detail flex flex-wrap lg:flex-col justify-between items-center lg:items-start lg:mr-20 py-4">
+                    <h3 class="work-title font-bold lg:text-xl">RIFRUF<span class="work-role text-xs ml-1 text-gray-500">Veterinary Advisor</span></h3>
+                    <button class="btn-hollow lg:order-last md:px-6 lg:text-lg lg:mt-4">Visit</button>
+                    <p class="work-desc mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla commodi labore Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam, placeat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic libero eius corrupti commodi iusto minima illo quae esse voluptatem ut? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque doloribus exercitationem, quaerat nostrum illum id?</p>
+                </div>
+            </div>
         </div>
     </section>
-    <section class="cta container">
+    <section class="cta container mt-24 lg:mt-32">
+        <div class="w-screen bg-lavender font-extrabold px-4 py-12 md:px-12 lg:h-80 lg:px-24 lg:py-16 2xl:px-36 flex flex-col justify-center items-center">
+           <p class="text-indigo text-2xl md:text-3xl lg:text-4xl">Interested in working with me?</p>
+           <button class="btn-indigo text-sm md:text-lg mt-8 md:py-3 md:px-6 hover:scale-110 hover:text-white uppercase">Say  Hello</button>
+        </div>
     </section>
-    <footer class="container"></footer>
+    <footer>
+        <div class="h-96 w-screen bg-indigo text-lavender px-8 md:px-14 lg:px-24 flex flex-col lg:flex-row-reverse items-center justify-around">
+            <div class="footer-social flex flex-wrap justify-around w-full lg:w-auto lg:flex-col lg:gap-4 "><span class="hidden lg:block">Follow me</span>
+                <div>linkedIn</div>
+                <div>Instagram</div>
+                <div>KoitaPets</div>
+                <div>What is Andy Doing NOW?!</div>
+            </div>
+            <ul class="footer-nav flex flex-wrap justify-around w-full lg:w-auto lg:flex-col lg:gap-4">
+                <li><a href="">About</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Work</a></li>
+                <li><a href="">FAQ</a></li>
+
+            </ul>
+            <div class="text-lavender">ModernVet <span class="text-coral text-xl font-extrabold">.</span> Solutions
+                <div class="text-xs text-haze text-center">© 2022, All Rights Reserved.</div></div>
+        </div>
+    </footer>
     <script src="bundle.js"></script>
 </body>
 </html>

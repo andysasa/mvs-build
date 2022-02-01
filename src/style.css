@@ -17,11 +17,16 @@
 
 @layer components {
     .btn-indigo {
-        @apply py-2 px-4 text-coral bg-indigo drop-shadow focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-coral rounded-full font-semibold;
+        @apply py-2 px-4 text-coral bg-indigo drop-shadow focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-coral rounded-full font-semibold ease-in duration-100;
     }
 
     .btn-white {
-        @apply py-2 px-4 text-indigo bg-white drop-shadow focus:outline-none focus:ring-2 focus:ring-indigo  rounded-full  font-semibold;
+        @apply py-2 px-4 text-indigo bg-white drop-shadow focus:outline-none focus:ring-2 focus:ring-indigo  rounded-full  font-semibold ease-in duration-100;
+    }
+
+    .btn-hollow {
+        @apply py-1 px-4 text-indigo text-sm bg-transparent border-2 border-indigo drop-shadow hover:bg-indigo hover:text-white focus:outline-none focus:ring-2 focus:ring-white  rounded-full  font-semibold ease-in duration-100;
+
     }
 
     .burger-transition {
@@ -59,11 +64,11 @@
     }
 
     .vert-service-item {
-        @apply w-1/3 bg-white drop-shadow-md rounded-lg h-2/3;
+        @apply w-1/3 bg-white drop-shadow-md rounded-lg ;
     }
 
     .horizontal-service-item {
-        @apply rounded-lg bg-white drop-shadow-md w-full h-1/4;
+        @apply rounded-lg bg-white drop-shadow-md w-full;
     }
 
     .services-title {
