@@ -63,8 +63,25 @@
         }
     }
 
+    .typewriter-text {
+        @apply uppercase border-r-3 border-r-gray-700 text-3xl lg:text-4xl xl:text-5xl;
+
+    }
+
+    .typewriter-text-end {
+        @apply uppercase bg-indigo text-lavender text-3xl lg:text-4xl xl:text-5xl px-2;
+    }
+
+    .period {
+        @apply uppercase bg-indigo text-coral font-extrabold text-3xl lg:text-4xl xl:text-5xl px-2; 
+    }
+
+    .quote-title {
+        transform: translateY(1080px);
+    }
+
     .vert-service-item {
-        @apply w-1/3 bg-white drop-shadow-md rounded-lg ;
+        @apply w-1/3 bg-white drop-shadow-md rounded-lg;
     }
 
     .horizontal-service-item {
