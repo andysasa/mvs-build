@@ -33,6 +33,10 @@ module.exports = {
         'maven-pro': ['"Maven Pro"', 'sans-serif'],
         'Freehand': ['"Freehand"', 'cursive']
       },
+      height: {
+        '128': '32rem',
+        '152': '38rem',
+      }
     },
   },
   variants: {

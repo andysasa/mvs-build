@@ -11,10 +11,10 @@ export const parallax = () => {
     const workBar = document.querySelector('.work-bar')
     const translate = document.querySelectorAll('.translate');
     const value = window.scrollY;
-    
+
     translate.forEach(e => {
         const speed = e.dataset.speed;
-        
+
 
         // section heights
         const headerHeight = header.getBoundingClientRect().height;
@@ -22,11 +22,13 @@ export const parallax = () => {
         const quoteSectionHeight = quoteSection.getBoundingClientRect().height;
         const quoteContentHeight = quoteContent.getBoundingClientRect().height;
         const servicesSectionHeight = servicesSection.getBoundingClientRect().height;
+
         // section tops
         const quoteTitleTop = quoteTitle.getBoundingClientRect().top;
         const quoteSectionTop = quoteSection.getBoundingClientRect().top;
         const servicesSectionTop = servicesSection.getBoundingClientRect().top;
-        const workSectionTop = workSection.getBoundingClientRect().top;        
+        const workSectionTop = workSection.getBoundingClientRect().top;
+
         // parallax
         const scrollParallax = speed * value;
         const quoteTitleParallax = (quoteSectionTop/(scrollY * 2)) * 35;
@@ -39,7 +41,6 @@ export const parallax = () => {
         const servicesStart = (value - (servicesSectionTop/2));
         const servicesBarParallax = servicesStart / (heroHeight + quoteSectionHeight) * 3.5;
 
-        console.log(servicesBarParallax);
         const workStart = (value - workSectionTop)
         const workBarParallax = workStart / (heroHeight + quoteSectionHeight + servicesSectionHeight) * 3.5;
 
@@ -58,6 +59,6 @@ export const parallax = () => {
         if (workStart > 0 && workSectionTop > 0) {
             workBar.style.width = `${workBarParallax}rem`;
         }
-      
+
     })
 }

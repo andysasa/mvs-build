@@ -17,15 +17,15 @@
 
 @layer components {
     .btn-indigo {
-        @apply py-2 px-4 text-coral bg-indigo drop-shadow focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-coral rounded-full font-semibold ease-in duration-100;
+        @apply py-2 px-4 text-coral bg-indigo drop-shadow focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-coral rounded-full font-extrabold ease-in duration-100;
     }
 
     .btn-white {
-        @apply py-2 px-4 text-indigo bg-white drop-shadow focus:outline-none focus:ring-2 focus:ring-indigo  rounded-full  font-semibold ease-in duration-100;
+        @apply py-2 px-4 text-indigo bg-white drop-shadow focus:outline-none focus:ring-2 focus:ring-indigo  rounded-full  font-extrabold ease-in duration-100;
     }
 
     .btn-hollow {
-        @apply py-1 px-4 text-indigo text-sm bg-transparent border-2 border-indigo drop-shadow hover:bg-indigo hover:text-white focus:outline-none focus:ring-2 focus:ring-white  rounded-full  font-semibold ease-in duration-100;
+        @apply py-1 px-4 text-indigo text-sm bg-transparent border-2 border-indigo drop-shadow hover:bg-indigo hover:text-white focus:outline-none focus:ring-2 focus:ring-white  rounded-full  font-extrabold ease-in duration-100;
 
     }
 
@@ -70,6 +70,17 @@
 
     .typewriter-text-end {
         @apply uppercase bg-indigo text-lavender text-3xl lg:text-4xl xl:text-5xl px-2;
+    }
+
+    .unselected-circle {
+        @apply border-haze bg-offwhite;
+    }
+    .selected-circle {
+        @apply bg-indigo border-indigo;
+    }
+
+    .nav-dot:hover > span{
+        @apply opacity-100;
     }
 
     .period {

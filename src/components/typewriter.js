@@ -1,5 +1,5 @@
 export class Typewriter {
-    constructor(textElement, words, wait = 600) {
+    constructor(textElement, words, wait = 500) {
       this.textElement = textElement;
       this.words = words;
       this.wait = parseInt(wait, 10);
@@ -7,6 +7,7 @@ export class Typewriter {
       this.text = '';
       this.isDeleting = false;
       this.type();
+      
     }
   
     type() {

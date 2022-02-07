@@ -1,6 +1,7 @@
 import { navbar } from './components/navbar.js';
 import { Typewriter } from './components/typewriter.js';
 import { parallax } from './components/parallax.js';
+import { accordion } from './components/accordion.js';
 import './style.css';
 import '../assets/images/profile-photo.jpg';
 
@@ -9,10 +10,12 @@ document.addEventListener("DOMContentLoaded", init);
 function init() {
   const textElement = document.querySelector('.txt-type');
   const words = JSON.parse(textElement.getAttribute('data-words'));
-  const wait = textElement.getAttribute('date-wait');
+  const wait = textElement.getAttribute('data-wait');
 
   new Typewriter(textElement, words, wait);
   window.addEventListener('scroll', parallax);
+  
+  accordion();
   navbar();
 }
 
